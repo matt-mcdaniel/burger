@@ -1,14 +1,18 @@
 <div class="container">
-  <div class="jumbotron">
-    <img src="./../public/assets/images/burger.jpg" alt="burger photo">
-    <h1>Eat da Burger!</h1>
+  <div class="jumbotron row">
+    <div class=col-md-3>
+      <img src="/assets/images/burger.jpg" alt="burger photo" height="200" width="200" class="d-inline-block">
+    </div>
+    <div class="col-md-5">
+      <h1 class="d-inline-block">Eat da Burger!</h1>
+    </div>  
   </div><!-- close jumbotron div -->  
 
-  <div class="row">
+  <div class="row jumbotron">
   {{!-- Uneaten Burger List --}}
 
     <div class="col-md-5 col-md-offset-1">
-      <h2>Uneaten Hamburgers!</h2>
+      <h2 align="center">Uneaten Hamburgers!</h2>
       <ul>
         {{#each burgers}}
           {{#unless devoured}}
@@ -21,7 +25,7 @@
 
   {{!-- Devoured Burger List --}}
     <div class="col-md-5 col-md-offset-1">
-      <h2>Hamburgers devoured!</h2>
+      <h2 align="center">Hamburgers devoured!</h2>
 
       <ul>
         {{#each burgers}}
@@ -33,20 +37,22 @@
     </div><!-- close DEVOURED BURGER col-md-5 col-md-offset-1 -->
   </div><!-- close eaten and uneaten div -->  
 
-  <h2>Add a Burger</h2>
-  <form class="create-form">
+  <div class="jumbotron">
+    <h2>Add a Burger</h2>
+    <form class="create-form">
 
-    <div class="form-group">
-      <label for="ca">Hamburger:</label>
-      <input type="text" id="ca" name="name">
-    </div>
+      <div class="form-group">
+        <label for="ca">Hamburger:</label>
+        <input type="text" id="ca" name="name">
+      </div>
 
-    <div class="form-group">
-      <label for="slee">Devoured?</label><br>
-      <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-      <input type="radio" name="devoured" value="0"> Not Eaten
-    </div>
+      <div class="form-group">
+        <label for="slee">Devoured?</label><br>
+        <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+        <input type="radio" name="devoured" value="0"> Not Eaten
+      </div>
 
-    <button type="submit">Add Hamburger</button>
-  </form>
+      <button type="submit">Add Hamburger</button>
+    </form>
+  </div><!-- close jumbotron - Add a burger -->  
 </div> <!-- close CONTAINER div -->  
