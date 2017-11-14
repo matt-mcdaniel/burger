@@ -1,14 +1,11 @@
-* **Files**
+# Eat-da-burger
 
-  * `22-CatsAppProblem`
+Technology: MySQL, Node, Express, Handlebars and a homemade ORM.
 
-* **Instructions**
+Design Pattern: Model-View-Controller (MVC)
 
-  * Add a delete button into the `index.handlebars` file next to each cat.
+<img src="public/assets/images/MVC-Process.png">
 
-  * Add on to the following:
+This app uses Node and MySQL to query and route data using a self-made ORM, and Handlebars to generate your HTML.
 
-  * The `cats.js` file to add a jQuery event handler for the delete button.
-  * The ORM to include a delete key and function
-  * The cat model to include a delete key and function that uses the ORM
-  * The `catsController.js` file to have a `/api/cats/:id` delete route, to call the delete key of the cat model, and to pass in arguments as necessary
+<img src="public/assets/images/screenshot.JPG">
